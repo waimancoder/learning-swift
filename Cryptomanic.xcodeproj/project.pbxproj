@@ -25,6 +25,7 @@
 		601EC73A2A3B6D4100C4AB3C /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EC7392A3B6D4100C4AB3C /* CoinImageView.swift */; };
 		601EC73C2A3B6EEB00C4AB3C /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EC73B2A3B6EEB00C4AB3C /* CoinImageService.swift */; };
 		601EC73E2A3B706F00C4AB3C /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EC73D2A3B706F00C4AB3C /* CoinImageViewModel.swift */; };
+		601EC7652A431FB200C4AB3C /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EC7642A431FB100C4AB3C /* LocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		601EC7392A3B6D4100C4AB3C /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		601EC73B2A3B6EEB00C4AB3C /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		601EC73D2A3B706F00C4AB3C /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		601EC7642A431FB100C4AB3C /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				601EC7362A3A55CF00C4AB3C /* NetworkingManager.swift */,
+				601EC7642A431FB100C4AB3C /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				601EC7312A3A459800C4AB3C /* HomeViewModel.swift in Sources */,
 				600F217B2A39E621001074AE /* ContentView.swift in Sources */,
 				601EC71D2A39F19500C4AB3C /* HomeView.swift in Sources */,
+				601EC7652A431FB200C4AB3C /* LocalFileManager.swift in Sources */,
 				601EC7342A3A4DD800C4AB3C /* CoinDataServices.swift in Sources */,
 				601EC73A2A3B6D4100C4AB3C /* CoinImageView.swift in Sources */,
 				600F21792A39E621001074AE /* CryptomanicApp.swift in Sources */,

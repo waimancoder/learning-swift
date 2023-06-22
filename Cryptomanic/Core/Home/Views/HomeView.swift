@@ -11,15 +11,16 @@ struct HomeView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
     @State private var notShowPortfolio: Bool = true
-    
+   
     var body: some View {
         ZStack{
             //Background Layer
             Color.theme.background.ignoresSafeArea()
-            
+        
             //Content Layer
             VStack{
                 //Home Header
+                
                 homeHeader
                 
                 ColumnHeader
@@ -27,15 +28,12 @@ struct HomeView: View {
                 if !notShowPortfolio {
                    allCoinList
                     .transition(.move(edge: .leading))
-                    
-                    
                 }
+                
                 if notShowPortfolio {
                     porfolioCoinList
                         .transition(.move(edge: .trailing))
-                        
                 }
-               
                 
                 Spacer(minLength: 3.0)
                 
@@ -45,16 +43,6 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView{
-            HomeView()
-                .navigationBarHidden(true)
-        }
-        .environmentObject(dev.homevm)
-        
-    }
-}
 
 extension HomeView {
     private var homeHeader: some View {
@@ -118,5 +106,16 @@ extension HomeView {
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
         .padding(.horizontal)
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView{
+            HomeView()
+                .navigationBarHidden(true)
+        }
+        .environmentObject(dev.homevm)
+        
     }
 }
